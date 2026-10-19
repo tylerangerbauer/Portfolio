@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Writing, communications, and social media samples by Tyler Angerbauer."
+  >
+
+  <title>Writing & Social Media | Tyler Angerbauer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Styles specific to this page -->
+  <style>
+    .samples-container,
+    .samples-header,
+    .samples-footer {
+      width: min(1180px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .samples-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-block: 24px;
+    }
+
+    .samples-nav,
+    .samples-jump-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .samples-nav a,
+    .samples-jump-links a {
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .samples-intro {
+      padding: 70px 0 50px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .samples-intro h1 {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      overflow-wrap: anywhere;
+    }
+
+    .samples-intro > p:not(.eyebrow) {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .samples-jump-links {
+      margin-top: 28px;
+    }
+
+    .samples-section {
+      padding-block: 60px;
+      scroll-margin-top: 24px;
+    }
+
+    .samples-section h2 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+    }
+
+    .samples-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    .sample-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .sample-thumbnail {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .sample-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+      padding: 28px;
+    }
+
+    .sample-content h3 {
+      margin-bottom: 14px;
+    }
+
+    .sample-description {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .sample-role {
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    .sample-content .text-link {
+      margin-top: auto;
+    }
+
+    .samples-footer {
+      padding-block: 30px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .samples-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .samples-intro {
+        padding-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="samples-header">
+    <a class="brand" href="index.html">TA</a>
+
+    <nav class="samples-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#work">Featured Work</a>
+      <a href="samples.html" aria-current="page">
+        Writing & Social Media
+      </a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="samples-container">
+    <!-- PAGE INTRODUCTION -->
+    <section class="samples-intro">
+      <p class="eyebrow">Writing · Communications · Digital Content</p>
+
+      <h1>Writing & Social Media</h1>
+
+      <p>
+        Stories, communications, and digital content created to inform
+        audiences and bring important moments into focus.
+      </p>
+
+      <nav class="samples-jump-links" aria-label="Sample categories">
+        <a href="#writing">Written Samples ↓</a>
+        <a href="#social">Social Media Creations ↓</a>
+      </nav>
+    </section>
+
+    <!-- WRITTEN SAMPLES: Copy a sample-card to add another piece -->
+    <section class="samples-section" id="writing">
+      <p class="eyebrow">Articles · Press Releases · Newsletters</p>
+      <h2>Written Samples</h2>
+
+      <div class="samples-grid">
+
+        <!-- WRITING SAMPLE 1 -->
+        <article class="sample-card">
+          <div class="sample-content">
+            <p class="project-type">Journalism & Analysis</p>
+
+            <h3>Article Title</h3>
+
+            <p class="sample-description">
+              Add two sentences explaining the story, its audience,
+              and the reporting or analysis you contributed.
+            </p>
+
+            <p class="sample-role">
+              <strong>My role:</strong> Writer
+            </p>
+
+            <a
+              class="text-link"
+              href="REPLACE_WITH_ARTICLE_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read article →
+            </a>
+          </div>
+        </article>
+
+        <!-- WRITING SAMPLE 2 -->
+        <article class="sample-card">
+          <div class="sample-content">
+            <p class="project-type">Press Release · Writing Exercise</p>
+
+            <h3>Press Release Title</h3>
+
+            <p class="sample-description">
+              Add a brief explanation of the announcement and the
+              audience this sample was written for.
+            </p>
+
+            <p class="sample-role">
+              <strong>My role:</strong> Writer
+            </p>
+
+            <a
+              class="text-link"
+              href="REPLACE_WITH_PDF_PATH"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read press release →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA: Copy a sample-card to add another piece -->
+    <section class="samples-section" id="social">
+      <p class="eyebrow">Reels · Photography · Social Posts</p>
+      <h2>Social Media Creations</h2>
+
+      <div class="samples-grid">
+
+        <!-- SOCIAL SAMPLE 1 -->
+        <article class="sample-card">
+          <!-- OPTIONAL: Uncomment after adding your thumbnail.
+          <img
+            class="sample-thumbnail"
+            src="images/reel-thumbnail.jpg"
+            alt="Describe the scene shown in your reel thumbnail"
+            loading="lazy"
+          >
+          -->
+
+          <div class="sample-content">
+            <p class="project-type">Short-Form Video</p>
+
+            <h3>Reel Title</h3>
+
+            <p class="sample-description">
+              Describe the story or message, the intended audience,
+              and your contribution to the finished video.
+            </p>
+
+            <p class="sample-role">
+              <strong>My role:</strong> Replace with your actual role
+            </p>
+
+            <a
+              class="text-link"
+              href="REPLACE_WITH_REEL_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Watch reel →
+            </a>
+          </div>
+        </article>
+
+        <!-- SOCIAL SAMPLE 2 -->
+        <article class="sample-card">
+          <div class="sample-content">
+            <p class="project-type">Photography & Social Content</p>
+
+            <h3>Photo Story or Social Post Title</h3>
+
+            <p class="sample-description">
+              Explain what you covered and how your photography,
+              captions, or design helped tell the story.
+            </p>
+
+            <p class="sample-role">
+              <strong>My role:</strong> Replace with your actual role
+            </p>
+
+            <a
+              class="text-link"
+              href="REPLACE_WITH_POST_OR_GALLERY_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View project →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="samples-footer">
+    <p>Tyler Angerbauer · Writing & Social Media</p>
+    <a href="index.html">← Back to portfolio</a>
+  </footer>
+</body>
+</html>
